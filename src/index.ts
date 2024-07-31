@@ -9,7 +9,7 @@ interface Game {
 }
 
 
-async function webScrapping() {
+async function webScraping() {
   const url: string = `https://olympics.com/pt/paris-2024/calendario/brasil?day=27-julho`;
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
@@ -64,7 +64,7 @@ function saveInDB(file: string, data: Array<Game>): void {
 
 async function main() {
   const DB_FILE_PATH = "./src/games.json";
-  const games = await webScrapping();
+  const games = await webScraping();
   console.log(games);
   saveInDB(DB_FILE_PATH, games);
 }
