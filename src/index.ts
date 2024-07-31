@@ -10,7 +10,7 @@ interface Game {
 
 
 async function webScraping() {
-  const url: string = `https://olympics.com/pt/paris-2024/calendario/brasil?day=27-julho`;
+  const url: string = `https://olympics.com/pt/paris-2024/calendario/brasil`;
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
 
