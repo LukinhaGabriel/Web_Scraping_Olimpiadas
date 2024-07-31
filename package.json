@@ -1,0 +1,23 @@
+{
+  "name": "olimpiadas",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "puppeteer": "^22.14.0",
+    "puppeteer-core": "^22.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/puppeteer": "^7.0.4",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
